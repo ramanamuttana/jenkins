@@ -73,7 +73,7 @@ pipeline {
         stage("Docker Build "){
             steps{
                 script{
-                       withDockerRegistry(credentialsId: '16bda58e-7358-4a16-9dcd-9c91f99e20bb', toolName: 'docker') {
+                       withDockerRegistry(credentialsId: '16bda58e-7358-4', toolName: 'docker') {
     
                     
                         sh "docker build -t image1 ."
